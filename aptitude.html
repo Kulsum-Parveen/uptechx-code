@@ -1,0 +1,142 @@
+<head>
+    <style>
+      /* General section styles */
+      .cheatsheets-section {
+        padding: 3rem;
+        background-color: #f7f8fa;
+        font-family: 'Arial', sans-serif;
+      }
+  
+      h2 {
+        text-align: left;
+        color: darkorchid;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+  
+      h3 {
+        font-size: 1.3rem;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+      }
+  
+      .cheatsheet-categories {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+  
+      .category {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        cursor: pointer;
+        position: relative;
+      }
+  
+      .category:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+      }
+  
+      .category ul {
+        list-style-type: none;
+        padding: 0;
+      }
+  
+      .category ul li {
+        margin-bottom: 1rem;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        animation-delay: 0.2s;
+      }
+  
+      .category ul li a {
+        color: #3498db;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+  
+      .category ul li a:hover {
+        color: #e74c3c;
+        text-decoration: underline;
+      }
+  
+      /* Animation for fade-in effect */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+  
+      /* Title animation */
+      h2 {
+        animation: slideInFromLeft 1s ease-out;
+      }
+  
+      @keyframes slideInFromLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  
+  <section class="cheatsheets-section">
+      <h2>Aptitude Cheatsheets</h2>
+      <div class="cheatsheet-categories">
+          <!-- Qualitative Aptitude Section -->
+          <div class="category">
+              <h3>Qualitative Aptitude</h3>
+              <ul>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-qualitative-pdf-1-id/view?usp=drivesdk" target="_blank">Qualitative Aptitude Cheat Sheet 1</a>
+                  </li>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-qualitative-pdf-2-id/view?usp=drivesdk" target="_blank">Qualitative Aptitude Cheat Sheet 2</a>
+                  </li>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-qualitative-pdf-3-id/view?usp=drivesdk" target="_blank">Qualitative Aptitude Cheat Sheet 3</a>
+                  </li>
+              </ul>
+          </div>
+  
+          <!-- Quantitative Aptitude Section -->
+          <div class="category">
+              <h3>Quantitative Aptitude</h3>
+              <ul>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-quantitative-pdf-1-id/view?usp=drivesdk" target="_blank">Quantitative Aptitude Cheat Sheet 1</a>
+                  </li>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-quantitative-pdf-2-id/view?usp=drivesdk" target="_blank">Quantitative Aptitude Cheat Sheet 2</a>
+                  </li>
+                  <li>
+                      <a href="https://drive.google.com/file/d/your-quantitative-pdf-3-id/view?usp=drivesdk" target="_blank">Quantitative Aptitude Cheat Sheet 3</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  
